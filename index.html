@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnzGarage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-     <div class="topnav">
-      <a class="active" href="#acasa">Acasa</a>
-      <a href="#produse">Produse</a>
-      <a href="#contact">Contact</a>
-     </div>
-     <div class="video">
-      <video autoplay muted loop playsinline class="bg-video">
-      <source src="video/video_compress.mp4" type="video/mp4">
-      Videoclipul nu poate fi redat.
-        </video>
-     </div>
+
+    <!-- Fundal video -->
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="video/video_compress.mp4" type="video/mp4">
+        Videoclipul nu poate fi redat.
+    </video>
+
+    <!-- Conținutul principal -->
+    <main>
+        <div class="topnav">
+            <a class="active" href="#acasa">Acasa</a>
+            <a href="#produse">Produse</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Alte elemente de conținut, dacă vrei -->
+        <div class="overlay-text">
+            <h1>EnzGarage</h1>
+            <p>Custom Car Culture</p>
+        </div>
+    </main>
+
+    <!-- Footerul -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>        
+        </div>
+    </footer>
+
 </body>
 </html>

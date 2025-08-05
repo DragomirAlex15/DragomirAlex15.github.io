@@ -1,3 +1,7 @@
+/* ===============================
+   FONT IMPORT + RESET DE BAZĂ
+   =============================== */
+
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
 * {
@@ -6,12 +10,20 @@
     box-sizing: border-box;
 }
 
-body, html {
+/* ===============================
+   STIL GENERAL PENTRU PAGINĂ
+   =============================== */
+
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'UnifrakturCook', cursive;
-    overflow: hidden;
+    overflow: hidden; /* ascunde scrollul orizontal */
 }
+
+/* ===============================
+   FUNDAL VIDEO FULL SCREEN
+   =============================== */
 
 .bg-video {
     position: fixed;
@@ -20,15 +32,18 @@ body, html {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
+    z-index: -1; /* trimite video-ul în fundal */
 }
 
-/* Navbar */
+/* ===============================
+   NAVBAR (Meniu de sus)
+   =============================== */
+
 .topnav {
     position: absolute;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* semi-transparent pentru claritate */
+    background: rgba(0, 0, 0, 0.6); /* fundal semi-transparent */
     display: flex;
     justify-content: center;
     padding: 15px 0;
@@ -51,7 +66,10 @@ body, html {
     border-bottom: 2px solid #ffcc00;
 }
 
-/* Text central (opțional) */
+/* ===============================
+   TEXT CENTRAL (deasupra videoului)
+   =============================== */
+
 .overlay-text {
     position: absolute;
     top: 50%;
@@ -70,4 +88,109 @@ body, html {
 
 .overlay-text p {
     font-size: 20px;
+}
+
+/* ===============================
+   FOOTER (josul paginii)
+   =============================== */
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Arial', sans-serif;
+    z-index: 10;
+    margin-top: auto; /* îl împinge jos */
+}
+
+/* -------------------------------
+   Footer - Container principal
+   ------------------------------- */
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* -------------------------------
+   Footer - Iconițe Social Media
+   ------------------------------- */
+
+.socialIcons {
+    margin-bottom: 10px;
+}
+
+.socialIcons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+    color: #ffcc00;
+}
+
+/* -------------------------------
+   Footer - Meniu de jos (navigare)
+   ------------------------------- */
+
+.footerNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerNav ul li {
+    margin: 5px 15px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footerNav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* -------------------------------
+   Footer - Linie de jos (copyright)
+   ------------------------------- */
+
+.footerBottom {
+    background-color: #111;
+    padding: 15px 0;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footerBottom .designer {
+    color: #ffcc00;
+}
+
+/* ===============================
+   STRUCTURĂ FLEX PENTRU PAGINĂ
+   =============================== */
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
 }
