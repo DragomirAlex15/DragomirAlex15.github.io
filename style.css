@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'UnifrakturCook', cursive;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Navbar */
+.topnav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent pentru claritate */
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.topnav a:hover {
+    color: #ffcc00;
+}
+
+.topnav a.active {
+    border-bottom: 2px solid #ffcc00;
+}
+
+/* Text central (opțional) */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 5;
+    padding: 0 20px;
+}
+
+.overlay-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 20px;
+}
